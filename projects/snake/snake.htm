@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake</title>
+	<meta name="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+	<div id="interface" class="interface page__interface">
+		<div class="statistic interface__statistic">
+			<div class="total statistic__total">
+				<span class="description statistic__description">Total:</span>
+				<span class="value statistic__value">0</span>
+			</div>
+			<div class="timing statictic__timing">
+				<div class="minutes timing__minutes">00:</div>
+				<div class="seconds timing__seconds">00:</div>
+				<div class="milliseconds timing__milliseconds">00</div>
+			</div>
+			<div class="volume interface__volume"></div>
+		</div>
+		<div class="hint interface__hint">
+			<div class="pause hint__item hint__pause">
+				<div class="pause__view">P</div>
+				<div class="pause__description">- pause</div>
+			</div>
+			<div class="mute hint__item hint__mute">
+				<div class="mute__view">M</div>
+				<div class="mute__description">- mute</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		let wrapBackground = document.getElementById('interface');
+	</script>
+	
+	<script src="./code/jtool.js"></script>
+	<script src="./code/level-map.js"></script>
+	<script src="./code/sound.js"></script>
+	<script src="./code/interface.js"></script>
+	<script src="./code/game.js"></script>
+</body>
+</html>

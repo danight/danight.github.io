@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory</title>
+	<meta name="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/menu.css">
+	<link rel="stylesheet" href="./styles/desk.css">
+	<script src="./code/jtool.js"></script>
+	<script src="./code/sound.js"></script>
+	<script src="./code/prompt.js"></script>
+	<script src="./code/desk.js"></script>
+</head>
+<body class="page">
+	<div id="main-menu" class="main-menu page__main-menu">	
+		<h3 class="headline main-menu__headline">Configuration game</h3>
+		<form action="" method="" class="form main-menu__form">
+			<fieldset name="gameSettings" class="game-settings main-menu__fieldset main-menu__game-setting">
+				<legend class="game-settings__legend main-menu__legend">
+					Game Setting
+				</legend>	
+				<div class="game-settings__wrapper">
+					<p class="bot main-menu__item">
+						<label for="dimension" class="game-settings__label main-menu__label">
+							Dimencionality of the game
+						</label>
+						<select id="dimension" name="dimension" class="dimension main-menu__select game-settings__dimension">
+							<option value="6" class="main-menu__option dimension__option">3:4</option>
+							<option value="8" class="main_menu__option dimension__option">4:4</option>
+						</select>
+					</p>
+					<p class="main-menu__robot main-menu__item">
+						<label for="robot" class="game-settings__label main-menu__label">Play with bot</label>
+						<input id="robot" type="checkbox" name="robot" class="game-setting__robot main-menu__input" disabled="">
+					</p>
+				</div>
+				<p class="main-menu__item">
+					<label for="subjects" class="game-settings__label main-menu__label">
+						Themes of the game
+					</label>
+					<select id="subjects" name="subjects" class="subjects main-menu__select game-settings__subjects">
+						<option value="vegetables" class="main-menu__option subjects__option">e-45</option>
+						<option value="cars" class="main-menu__option subjects__option">Cars</option>
+					</select>						
+				</p>
+			</fieldset>
+			<fieldset name="userSettings" class="user-settings main-menu__fieldset main-menu__user-settings">
+				<legend class="user-settings__legend main-menu__legend">
+					User Setting
+				</legend>
+				<p class="main-menu__item">
+					<label for="fst-player" class="user-settings__label main-menu__label">First player</label>
+					<input id="fst-player" type="text" 
+						class="fst-player main-menu__input user-setting__fst-player" 
+					name="fstPlayer" data-required="Enter name of<br>the player" autofocus placeholder="Name player">
+				</p>
+				<p class="main-menu__item">
+					<label for="scn-player" class="user-settings__label main-menu__label">Second player</label>
+					<input id="scn-player" type="text" class="scn-player main-menu__input user-setting__scn-player" 
+					name="scnPlayer" data-required="Enter name of<br>the player" placeholder="Name player">
+				</p>
+			</fieldset>		
+			<p class="main-menu__item">
+				<input type="submit" class="submit main-menu__submit" name="submit" value="Ready!">
+			</p>
+		</form>
+	</div>
+	<div id="playing-field" class="playing-field page__playing-field">
+		<div class="statistic playing-field__statistic">
+			<div class="fstPlayer statistic__item statistic__fstPlayer">
+				<div class="picture picture__item fstPlayer__picture"></div>
+				<div class="nickname nickname__item fstPlayer__nickname"></div>
+				<div class="amount amount__item fstPlayer__amount"></div>
+			</div>
+			<div class="scnPlayer statistic__item statistic__scnPlayer">
+				<div class="picture picture__item scnPlayer__picture"></div>
+				<div class="nickname nickname__item scnPlayer__nickname"></div>
+				<div class="amount amount__item scnPlayer__amount"></div>
+			</div>
+		</div>
+		<table class="desk playing-field__desc">
+		</table>
+		<div class="prepare desk__prepare">
+			<button data-action="shuffle" class="shuffle prepare__item prepare__shuffle">shuffle</button>
+			<button data-action="start" class="start prepare__item prepare__start">start</button>
+		</div>
+		<div class="after-game playing-field__after-game">
+			<button data-action="playAgain" class="after-game__play-again after-game__item">play again</button>
+			<button data-action="menu" class="after-game__main-menu after-game__item">menu</button>
+		</div>
+	</div>
+	<script src="./code/running.js"></script>
+</body>
+</html>
