@@ -25,7 +25,7 @@
                 }
             }
             
-            if (elems[0] != elems[1]) {
+            if (elems[0].value != elems[1].value) {
                 alert('Rows and columns must be of the same length');
                 break;
             }
