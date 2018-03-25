@@ -17,14 +17,19 @@
                 alert('fields must not be empty!');
                 break;
             }
-
+           
             if (field == elems[0] || field == elems[1]) {
                 if (field.value < 3 || field.value > 26) {
                     alert('Rows and columns must be at least 4 and not more than 26');
                     break;
                 }
             }
-
+            
+            if (elems[0] != elems[1]) {
+                alert('Rows and columns must be of the same length');
+                break;
+            }
+            
             if (field == elems[2] > 100) {
                 alert('Scale should not exceed 100');
                 break;
