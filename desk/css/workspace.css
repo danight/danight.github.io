@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.workspace {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.workspace__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workspace-fst {
+    width: 30%;
+}
+.workspace-scn {
+    border-left: 3px solid #ddd;
+    width: 70%;
+    height: 100%;
+}
+.workspace-scn__wrapper {
+    height: 90%;
+    width: 80%;
+    overflow: auto;
+}

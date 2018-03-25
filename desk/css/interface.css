@@ -1,0 +1,46 @@
+.interface {
+    max-width: 200px;
+    width: 100%;
+    box-shadow: 0 0 7px #ddd;
+    border-radius: 7px;
+    padding: 15px 10px;
+    font-family: 'Century Gothic', 'Gill Sans', sans-serif;
+}
+.interface__input:not([type='submit']) {
+    border: 1px solid #ddd;
+    padding: 10px 5px 7px 10px;
+    font-size: 1.2em;
+    width: calc(78% - 30px);
+}
+.interface__headline {
+    margin-bottom: 15px;
+    color: palegreen;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.interface__row {
+    display: flex;
+    align-items: center;
+}
+.interface__row + .interface__row {
+    margin-top: 10px;
+}
+.interface__row:last-child {
+    margin-top: 15px;
+}
+.interface__hint {
+    width: 22%;
+    margin-right: 10px;
+}
+.interface__draw {
+    width: 100%;
+    background: lightgreen;
+    font-size: 1.3em;
+    font-variant: small-caps;
+    border-radius: 5px;
+    padding: 7px 10px;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 7px #ddd;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Alex Matviychuck">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>desk</title>
+      <link rel="stylesheet" href="./css/interface.css">
+      <link rel="stylesheet" href="./css/desk.css">
+      <link rel="stylesheet" href="./css/workspace.css">
+</head>
+<body class="page">
+<div class="workspace page__workspace">
+            <section class="workspace-fst workspace__section">
+                  <form name="interface" class="interface workspace__interface">
+                        <h3 class="interface__headline">Desk configuration</h3>
+                        <div class="interface__row">
+                              <label for="rows" class="interface__hint">Rows:</label>
+                              <input type="number" value="8" min="4" name="rows" id="rows"
+                                     class="interface__rows interface__input">
+                        </div>
+                        <div class="interface__row">
+                              <label for="cols" class="interface__hint">Cols:&nbsp;&nbsp;</label>
+                              <input type="number" value="8" min="4" name="cols" id="cols"
+                                     class="interface__cols interface__input">
+                        </div>
+                        <div class="interface__row">
+                              <label for="scale" class="interface__hint">Scale:</label>
+                              <input type="number" value="40" min="10" step="2" name="scale"
+                                     id="scale"
+                                     class="interface__scale interface__input">
+                        </div>
+                        <div class="interface__row">
+                              <label for="color" class="interface__hint">Color:</label>
+                              <input style="background: #fff;" type="color" value="#a52a2a"
+                                     name="color" id="color"
+                                     class="interface__color interface__input">
+                        </div>
+                        <div class="interface__row">
+                              <input type="submit" name="draw" value="Draw"
+                                     class="interface__draw interface__input">
+                        </div>
+                  </form>
+            </section>
+            <section class="workspace-scn workspace__section">
+                  <div class="workspace-scn__wrapper"></div>
+            </section>
+      </div>
+      <script src="./js/babel.js"></script>
+      <script type="text/babel" src="./js/desk.js"></script>
+      <script type="text/babel" src="./js/interface.js"></script>
+</body>
+</html>
