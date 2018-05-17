@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page__game {
+    margin: 15px;
+}
+.game {
+    display: flex;
+    font-family: 'Century Gothic', 'Gill Sans', sans-serif;
+}
+
+.board-row {
+    display: flex;
+}
+
+.board-square:focus {
+    outline: none;
+    background-color: #fcfcfc;
+}
+
+.board-square {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #999;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.board-square_hightlight {
+    background-color: #f9f9f9 !important;
+}
+
+.board-row:last-child .board-square {
+    border-bottom: 1px solid #ddd;
+}
+
+.board-square:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.game__info {
+    margin-left: 20px;
+}
+
+.info__status {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.info__step-list-wrapper {
+    display: flex;
+}
+
+.info__step-list {
+    box-shadow: 0 0 7px #ddd;
+    max-height: 80px;
+    overflow-y: auto;
+    list-style: none;
+    margin-left: 5px;
+    padding: 0 3px;
+}
+
+.info__step-list-reverse {
+    align-self: flex-start;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border-radius: 5px;
+    background: #ff9999c7 url(./reverse.png) no-repeat center center /
+        80% 80%;
+    border: none;
+}
+
+.info__step {
+    display: block;
+    border: none;
+    background: palegreen;
+    color: #fff;
+    width: 100%;
+    font: 1.1em 'Trebuchet MS', Tahoma, sans-serif;
+    padding: 3px 5px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.info__step_selected {
+    background: #fff;
+    border: 1px solid palegreen;
+    color: palegreen;
+}
+
+.info__step:active {
+    background: #fff;
+    color: palegreen;
+    border: 1px solid palegreen;
+}
