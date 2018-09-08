@@ -1,0 +1,14 @@
+.app__game {
+    margin: 15px;
+}
+.game {
+    display: flex;
+    font: 1em 'Trebuche MS', Tahoma, sans-serif;
+    color: #777;
+}
+.game__history {
+    margin-left: 20px;
+}
+.game__status {
+    margin-bottom: 20px;
+}

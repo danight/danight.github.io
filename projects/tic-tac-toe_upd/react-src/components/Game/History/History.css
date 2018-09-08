@@ -1,0 +1,53 @@
+.history {
+    box-shadow: 0 0 7px #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.history__header {
+    position: relative;
+}
+.history__reverse {
+    outline: none;
+    font-weight: bold;
+    position: absolute;
+    right: 2%;
+    top: 55%;
+    width: 20px;
+    height: 20px;
+    background: url('./pics/reverse.png') center center /
+        80% 80% no-repeat palegreen;
+    border: none;
+    color: #fff;
+    transform: translateY(-50%);
+}
+.history__headline {
+    background: palegreen;
+    color: #fff;
+    font: bold 1.2em 'Marker Felt', 'Comic Sans MS', sans-serif;
+    padding: 2px 3px;
+}
+.history__list {
+    max-height: 130px;
+    height: 100%;
+    overflow-y: auto;
+    list-style: none;
+}
+.history__button:active {
+    background: #f8fef4;
+}
+.history__item_selected > .history__button {
+    color: #fff;
+    background: palegreen;
+}
+.history__button {
+    outline: none;
+    color: #777;
+    background: #fff;
+    font-size: 1em;
+    padding: 5px 7px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top: 1px solid palegreen;
+}
