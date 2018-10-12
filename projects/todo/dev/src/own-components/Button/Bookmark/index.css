@@ -1,0 +1,4 @@
+.bookmark { background-image: url('../pics/star_non-filled.png')     }
+.bookmark_active {
+    background-image: url('../pics/star.png');
+}

@@ -1,0 +1,28 @@
+.confirm {
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm__question {
+    color: #84c4ff;
+}
+
+.confirm__button-group {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.confirm__yes,
+.confirm__no {
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.confirm__yes { background: #84c4ff }
+.confirm__no { background: #ffb1b1 }

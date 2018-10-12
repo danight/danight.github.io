@@ -1,0 +1,14 @@
+.toggler-display-content {
+    border: none;
+    outline: none;
+    background: #f6f6f6;
+    border: 1px solid #f3f3f3;
+    color: #84c4ff;
+    font: bold .8em 'Century Gothic', 'Gill Sans', sans-serif;
+    width: 60px;
+    border-radius: 5px;
+    transition: border-color .2s ease-out;
+}
+.toggler-display-content:active {
+    border-color: #84c4ff;
+}

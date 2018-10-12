@@ -1,0 +1,10 @@
+.todo-list {
+    flex-direction: column;
+    margin-top: 20px !important;
+}
+.todo-list__message {
+    font: italic small-caps 1.3em 'Trebuchet MS', Tahoma, sans-serif;
+    color: #ccc;
+    padding: 7px 10px;
+    margin-left: 10px;
+}

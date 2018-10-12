@@ -1,0 +1,17 @@
+.add-todo {
+    display: flex;
+    font-family: 'Century Gothic', 'Gill Sans', sans-serif;
+}
+
+.add-todo__input {
+    font-size: 1.1em;
+    padding-right: 10px;
+    width: 80%;
+}
+
+.add-todo__button {
+    width: 20%;
+    border-bottom-left-radius: 0;
+    background: #84c4ff;
+    color: #fff;
+}

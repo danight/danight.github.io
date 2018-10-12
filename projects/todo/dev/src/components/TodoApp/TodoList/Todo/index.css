@@ -1,0 +1,72 @@
+.todo {
+    position: relative;
+    border-radius: 5px;
+    padding: 8px 16px;
+    word-wrap: break-word;
+    box-shadow: 0 0 5px #ddd;
+    transition: 
+        border-color .2s ease-out;
+    border: 1px solid transparent;
+}
+.todo__edit-field {
+    width: 100%;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 0 7px #ddd;
+    border-radius: 5px;
+}
+.todo__edit-field:focus {
+    border-bottom-color: #84c4ff;
+}
+.todo__confirm {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.tool-panel {
+    position: absolute;
+    right: 16px;
+    top: 4px;
+    z-index: 99;
+}
+.tool-panel__bookmark-button {
+    margin-right: 7px;
+}
+.tool-panel__edit-button {
+    margin-right: 5px;
+}
+.tool-panel .tool-panel__delete-button {
+    margin-left: 5px;
+}
+.todo .toggler-display-content {
+    position: absolute;
+    right: 16px;
+    bottom: 8px;
+}
+.todo_completed {
+    border-color: #84c4ff;
+}
+.todo__headline {
+    font: small-caps 1.3em 'Trebuchet MS', Tahoma, sans-serif;
+    color: #999;
+    margin-bottom: 16px;
+}
+.todo .switchbox__label,
+.todo .todo__edit-field {
+    font: 1em / 150% 'Trebuchet MS', Tahoma, sans-serif;
+    color: #999;
+}
+.todo + .todo {
+    margin-top: 15px;
+}
+.todo__date {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ddd;
+    font-size: .8em; 
+}

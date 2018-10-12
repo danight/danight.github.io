@@ -1,0 +1,35 @@
+.simple {
+    font: small-caps bold 1em 'Trebuchet MS', Tahoma, sans-serif;
+    color: #84c4ff;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+}
+.simple:active {
+    opacity: .8;
+    border-color: #84c4ff;
+}
+
+.edit, .delete,
+.save, .cancel,
+.bookmark {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.delete   { background-image: url('./pics/basket.png')   }
+.edit     { background-image: url('./pics/pencil.png')   }
+.save     { background-image: url('./pics/complete.png') }
+.cancel   { background-image: url('./pics/cancel.png')   }

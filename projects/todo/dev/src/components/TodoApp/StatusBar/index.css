@@ -1,0 +1,12 @@
+.status-bar__button {
+    width: calc(100% / 3);
+    transition: all .2s ease-out;
+}
+.status-bar__button:disabled {
+    opacity: .7;
+    box-shadow: 0 2px 7px 1px  #ddd;
+    border-color: #84c4ff;
+}
+.status-bar__button:nth-child(2) {
+    margin: 0 8px;
+}
