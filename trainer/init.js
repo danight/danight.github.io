@@ -1,0 +1,1 @@
+(function () { window.init = function () { new Trainer({ wrapper: document.getElementById('trainer') }).render() } })();
